@@ -1,37 +1,56 @@
-/* h1{
-    color:orange;
-    border: 1px solid black;
-    display: inline;
-} */
-div{
-    /* color:black; */
-    /* border: 1px solid red; */
-    /* display: inline-block; */
-    
-    color: white;
+/* universal selector * */
+*{
+    margin: 0;
+    /* this box-sizing makes it easier to maintian the same height or width if given */
+    box-sizing: border-box;
 }
-/* selection by classes */
-
-.left-division {
-    vertical-align: top;
-    display: inline-block;
-    width: 65%;
-    height: 500px;
-    background: skyblue;
-
+body{
+    font-family: 'Inter', sans-serif;
 }
-
-.right-division{
-    vertical-align: top;
-    height: 500px;
-    display: inline-block;
-    width: 30%;
-    background: tomato;
-
-}
-
-.parent-container{
+.parent-div{
     /* border: 3px solid black; */
-    width: 70%;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.left-div {
+    padding: 20px;
+    background: #d9d9d9;
+    height: 500px;
+    width: 50%;
+}
+
+.right-div {
+    /* background: #ff6347; */
+    background: url(./images/image1.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    height: 500px;
+    width: 50%;
+}
+
+.smartrectangle-line{
+    background: tomato;
+    height: 16px;
+    width: 224px;
+
+}
+span{
+    color: tomato;
+}
+.header-logotext{
+    margin-bottom: 20px;
+}
+.header-headingtext{
+    margin-bottom: 20px;
+}
+.header-longtext{
+    margin-bottom: 35px;
+}
+
+.link-holder{
+    display:flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 20px;
+
 }
