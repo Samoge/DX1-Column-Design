@@ -30,10 +30,10 @@ body{
 
 .smartrectangle-line{
     background: tomato;
-    height: 16px;
+    height: 10px;
     width: 224px;
-
 }
+
 span{
     color: tomato;
 }
@@ -45,6 +45,9 @@ span{
 }
 .header-longtext{
     margin-bottom: 35px;
+}
+.underrectangle{
+    background: rgba(38, 39, 69, 0.393);
 }
 
 .link-holder{
