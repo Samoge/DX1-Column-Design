@@ -11,6 +11,8 @@ body{
     /* border: 3px solid black; */
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 .left-div {
     padding: 20px;
@@ -82,20 +84,22 @@ span{
     align-items: center;
     padding: 50px 0;
     /* text-align:center; */
+    margin: 0 auto;
+    max-width: 1500px;
 }
 
 .secondsection-left{
     margin-right: 10px;
-    width: 350px;
-    height: 380px;
+    width: 300px;
+    height: 400px;
     background: #d9d9d9;
     padding: 40px 25px;
     text-align: center;
 
 }
 .secondsection-right{
-    width: 400px;
-    height: 420px;
+    width: 320px;
+    height: 460px;
     background: tomato;
 }
 p{
@@ -112,11 +116,13 @@ img{
     display:flex;
     justify-content: center;
     padding: 50px 0;
+    margin: 0 auto;
+    max-width: 1500px;
 }
 .thirdsection-left,
 .thirdsection-right{
-    width: 400px;
-    height: 420px;
+    width: 330px;
+    height: 430px;
 }
 
 .thirdsection-left{
@@ -135,6 +141,83 @@ img{
 .footer{
     background: tomato;
     padding: 20px;
+    display: flex;
     color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.icon-holder{
+    color: white;
+}
 
+
+/* mobile design--- using media queries */
+
+@media screen and (max-width: 900px){
+
+.right-div,
+.left-div{
+    height: 530px;
+}
+
+.left-div{
+    width: 60%
+}
+
+.right-div{
+    width: 40%;
+}
+
+.header-headingtext{
+    font-size: 30px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.smart-line{
+    width: 200px;
+}
+.link-holder{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 25px;
+    padding-left: 40px;
+}
+
+.link-holder h4 {
+    margin-bottom: 20px;
+}
+
+/* second section */
+.second-section{
+    flex-direction: column;
+}
+
+.secondsection-right{
+    margin-left: 0;
+    margin-top: 30px;
+}
+/* third-section */
+.thirdsection{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.thirdsection-right{
+    margin-bottom: 30px;
+}
+
+/* footer section */
+.footer{
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+.footer p{
+    text-align: center;
+}
 }
